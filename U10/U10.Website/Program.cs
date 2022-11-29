@@ -1,4 +1,4 @@
-namespace U10
+namespace U10.Website
 {
     public class Program
     {
