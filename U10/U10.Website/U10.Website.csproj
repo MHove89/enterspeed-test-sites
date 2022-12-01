@@ -4,6 +4,84 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\bergmania.openstreetmap.html" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lang\da-DK.xml" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lang\en-US.xml" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\autocomplete\css\autocomplete.css" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\layers-2x.png" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\layers.png" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\marker-icon-2x.png" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\marker-icon.png" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\marker-shadow.png" />
+    <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\leaflet.css" />
+    <Content Include="App_Plugins\Enterspeed.Dashboard\dashboard.controller.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\dashboard.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Resources\dashboard.resources.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\configuration.controller.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\failedjobs.controller.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\seed.controller.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\configuration.view.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\failedjobs.view.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\seed.view.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\lang\en-US.xml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\package.manifest">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\settings-dashboard.controller.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\settings-dashboard.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="App_Plugins\Enterspeed.Dashboard\styles.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\bergmania.openstreetmap.controller.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\autocomplete\js\autocomplete.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\autocomplete\js\autocomplete.min.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\autocomplete\js\autocomplete.umd.min.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\leaflet-src.esm.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\leaflet-src.esm.js.map" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\leaflet-src.js" />
+    <None Include="App_Plugins\Bergmania.OpenStreetMap\package.manifest" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="10.3.2" />
@@ -13,6 +91,7 @@
   <ItemGroup>
     <!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
+    <ProjectReference Include="..\..\..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms.V10\Enterspeed.Source.UmbracoCms.V10.csproj" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
 
