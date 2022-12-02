@@ -107,6 +107,7 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 
+
 # Visual Studio profiler
 *.psess
 *.vsp
@@ -350,4 +351,8 @@ MigrationBackup/
 .ionide/
 *.orig
 .idea/
-U10/data/
+U10/data/drive
+U9/data/drive
+U8/data/drive
+U7/data/drive
+*/*/App_Data/TEMP
