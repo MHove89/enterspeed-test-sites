@@ -15,62 +15,6 @@
     <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\marker-icon.png" />
     <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\images\marker-shadow.png" />
     <Content Include="App_Plugins\Bergmania.OpenStreetMap\lib\leaflet\leaflet.css" />
-    <Content Include="App_Plugins\Enterspeed.Dashboard\dashboard.controller.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\dashboard.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Resources\dashboard.resources.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\configuration.controller.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\failedjobs.controller.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Controllers\seed.controller.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\configuration.view.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\failedjobs.view.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\Dashboard.Sub.Views\seed.view.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\lang\en-US.xml">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\package.manifest">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\settings-dashboard.controller.js">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\settings-dashboard.html">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="App_Plugins\Enterspeed.Dashboard\styles.css">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Plugins\Bergmania.OpenStreetMap\bergmania.openstreetmap.controller.js" />
@@ -84,6 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Enterspeed.Source.UmbracoCms" Version="1.0.0-alpha-2" />
     <PackageReference Include="Umbraco.Cms" Version="10.3.2" />
     <PackageReference Include="Umbraco.TheStarterKit" Version="10.0.0" />
   </ItemGroup>
@@ -91,7 +36,6 @@
   <ItemGroup>
     <!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
-    <ProjectReference Include="..\..\..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms.NetCore\Enterspeed.Source.UmbracoCms.NetCore.csproj" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
 

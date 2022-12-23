@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net5.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<CopyRefAssembliesToPublishDirectory>true</CopyRefAssembliesToPublishDirectory>
 	</PropertyGroup>
@@ -65,6 +65,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Enterspeed.Source.UmbracoCms" Version="1.0.0-alpha-2" />
 		<PackageReference Include="Umbraco.Cms" Version="9.5.4" />
 	</ItemGroup>
 
@@ -72,7 +73,6 @@
 		<!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
 		<PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
 		<PackageReference Include="Umbraco.TheStarterKit" Version="9.0.0" />
-		<ProjectReference Include="..\..\..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms.NetCore\Enterspeed.Source.UmbracoCms.V9.csproj" />
 		<RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
 	</ItemGroup>
 
