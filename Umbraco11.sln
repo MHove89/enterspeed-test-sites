@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "U11", "U11", "{3E9BE4F7-DBA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U11.Website", "U11\U11.Website\U11.Website.csproj", "{2F1EFC32-F7FC-475C-AEBF-B9A08966B048}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterspeed.Source.UmbracoCms", "..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms\Enterspeed.Source.UmbracoCms.csproj", "{C67C9356-FD69-45E8-8444-F12CA98F469F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{2F1EFC32-F7FC-475C-AEBF-B9A08966B048}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F1EFC32-F7FC-475C-AEBF-B9A08966B048}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F1EFC32-F7FC-475C-AEBF-B9A08966B048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67C9356-FD69-45E8-8444-F12CA98F469F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67C9356-FD69-45E8-8444-F12CA98F469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67C9356-FD69-45E8-8444-F12CA98F469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67C9356-FD69-45E8-8444-F12CA98F469F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2F1EFC32-F7FC-475C-AEBF-B9A08966B048} = {3E9BE4F7-DBAA-4B25-8F28-17199BE6F41C}
+		{C67C9356-FD69-45E8-8444-F12CA98F469F} = {3E9BE4F7-DBAA-4B25-8F28-17199BE6F41C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5AD5EA2-DBD0-40FA-8EF2-18380EDDC3FA}
