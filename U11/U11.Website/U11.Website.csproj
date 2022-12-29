@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Enterspeed.Source.UmbracoCms" Version="1.0.0-alpha-2" />
     <PackageReference Include="Umbraco.Cms" Version="11.0.0" />
   </ItemGroup>
 
@@ -19,6 +18,10 @@
 
   <ItemGroup>
     <Folder Include="App_Plugins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms\Enterspeed.Source.UmbracoCms.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

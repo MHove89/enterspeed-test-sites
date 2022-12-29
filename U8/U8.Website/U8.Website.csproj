@@ -53,6 +53,9 @@
     <Reference Include="CSharpTest.Net.Collections, Version=14.906.1403.1082, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
       <HintPath>..\..\packages\CSharpTest.Net.Collections.14.906.1403.1082\lib\net40\CSharpTest.Net.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="Enterspeed.Source.Sdk, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Enterspeed.Source.Sdk.0.7.0\lib\netstandard2.0\Enterspeed.Source.Sdk.dll</HintPath>
+    </Reference>
     <Reference Include="Examine, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Examine.1.2.2\lib\net452\Examine.dll</HintPath>
     </Reference>
