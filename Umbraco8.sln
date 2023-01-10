@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U8.Website", "U8\U8.Website
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterspeed.Source.UmbracoCms.V8", "..\enterspeed-source-umbraco-cms\src\Enterspeed.Source.UmbracoCms.V8\Enterspeed.Source.UmbracoCms.V8.csproj", "{E6158BA2-5B73-46AB-9075-BE83BE773629}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{3EBF85B3-383B-4B0F-B240-A2C65263BB98}"
+	ProjectSection(SolutionItems) = preProject
+		U8\docker-compose.yml = U8\docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
